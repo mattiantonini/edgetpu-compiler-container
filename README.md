@@ -1,4 +1,4 @@
-# edgetpu-compiler-container
+# EdgeTPU Compiler Docker container
 This project allows you to convert quantized TFLite models in order to execute them on the [Coral Accelerator](https://coral.withgoogle.com/products/accelerator) or [Coral Dev Board](https://coral.withgoogle.com/products/dev-board/) even if you do not have the [EdgeTPU Compiler](https://coral.withgoogle.com/docs/edgetpu/compiler/) installed on your machine or if it is not supported like on MacOs X.
 
 ## Requirements
@@ -29,10 +29,10 @@ This step will take a few minutes.
 
 5. Run the container and convert a model
 ```
-docker run --rm -it -v $(pwd):/home/edgetpu-compiler edgetpu-compiler edgetpu_compiler <MODEL>_quant.tflite
+$ docker run --rm -it -v $(pwd):/home/edgetpu-compiler edgetpu-compiler edgetpu_compiler <MODEL>_quant.tflite
 ```
 This command converts the file `<MODEL>_quant.tflite` in the current directory to `<MODEL>_quant_edgetpu.tflite` that can be executed on the EdgeTPU.
 A working example is the following
 ```
-docker run --rm -it -v $(pwd):/home/edgetpu-compiler edgetpu-compiler edgetpu_compiler squeezenet_quant.tflite
+$ docker run --rm -it -v $(pwd):/home/edgetpu-compiler edgetpu-compiler edgetpu_compiler squeezenet_quant.tflite
 ```
