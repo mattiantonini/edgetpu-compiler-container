@@ -19,7 +19,7 @@ $ git clone git@github.com:mattiantonini/edgetpu-compiler-container.git
 
 3. Enter in the directory
 ```
-$ cd edgetpu-compiler-container edgetpu-compiler
+$ cd edgetpu-compiler-container
 ```
 
 4. Build the container
