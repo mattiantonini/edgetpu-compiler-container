@@ -11,6 +11,7 @@ $ docker version
 ```
 This container has been tested with
   - Docker CE 18.09.0 on Ubuntu 16.04.1.
+  - Docker CE 19.03.1 on MacOs X 10.14.5.
 2. Clone this repository
 ```
 $ git clone git@github.com:mattiantonini/edgetpu-compiler-container.git
